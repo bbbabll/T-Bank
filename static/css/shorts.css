@@ -1,0 +1,200 @@
+@font-face {
+  font-family: 'Tinkoff Sans-Regular';
+  src: url(.../static/fonts/TinkoffSans-Regular.ttf) format('ttf');
+}
+
+@font-face {
+  font-family: 'Tinkoff Sans-Bold';
+  font-weight: 600;
+  src: url(.../static/fonts/TinkoffSans-Bold.ttf) format('ttf');
+}
+
+@font-face {
+  font-family: 'Tinkoff Sans-Medium';
+  src: url(.../static/fonts/TinkoffSans-Medium.ttf) format('ttf');
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Tinkoff Sans-Regular", sans-serif;
+}
+
+.d-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.container-fluid {
+  background-color: #f6f7f8;
+}
+
+header {
+    background-color: #f6f7f8;
+    padding: 5px 395px;
+    justify-content: center;
+    align-items: center;
+}
+
+header .container {
+    border-bottom: 1px solid #e2e2e2;
+
+}
+header div img {
+    cursor: pointer;
+    width: 35px;
+    height: 51px;
+}
+
+header .container .menu {
+  position: absolute;
+  left: 40%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+}
+
+header .container .menu a {
+    font-size: 13px;
+    text-decoration: none;
+    margin-right: 24px;
+    color: #0000008a;
+    transition: 0.4s ease-in-out;
+}
+
+header .container .menu a:hover {
+    text-underline-offset: 23px;
+    text-decoration-thickness: 14px;
+    text-decoration: underline;
+    color: #252525;
+}
+
+header .container .prof a img {
+    width: 35px;
+    height: 36px;
+}
+
+header .container .prof {
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    display: flex;
+}
+
+header .container .prof a {
+    cursor: pointer;
+    font-size: 13px;
+    margin-right: 11px;
+    text-decoration: none;
+    color: #0000008a;
+    transition: 0.4s ease-in-out;
+}
+
+header .container .prof a:hover {
+    text-underline-offset: 23px;
+    text-decoration-thickness: 14px;
+    text-decoration: underline;
+    color: #252525;
+}
+header .container2 {
+    padding-bottom: 18px;
+    padding-top: 10px;
+    margin-top: 10px;
+}
+header .container2 .menu a {
+    font-size: 13px;
+    text-decoration: none;
+    line-height: 1;
+    margin-right: 24px;
+    color: #0000008a;
+    transition: 0.4s ease-in-out;
+}
+
+header .container2 .menu #active {
+    cursor: pointer;
+    text-underline-offset: 30px;
+    text-decoration-thickness: 14px;
+    text-decoration: underline;
+    color: #0e0e0e;
+}
+
+header .container2 .menu a:hover {
+    text-underline-offset: 30px;
+    text-decoration-thickness: 14px;
+    text-decoration: underline;
+    color: #252525;
+}
+
+header .container2 .name {
+    margin-left: 540px;
+    cursor: pointer;
+    font-size: 13px;
+    text-decoration: none;
+    color: #0000008a;
+    transition: 0.4s ease-in-out;
+}
+
+header .container2 .name:hover {
+    text-underline-offset: 30px;
+    text-decoration-thickness: 14px;
+    text-decoration: underline;
+    color: #252525;
+}
+
+header .container2 img {
+    margin-right: 15px;
+    width: 25px;
+    height: 25px;
+}
+
+.block1 {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.block1 #inner-div .main img {
+    cursor: pointer;
+    margin-left: 395px;
+}
+
+.block1 #inner-div #main2 img {
+    width: 486.37px;
+    height: 468.83px;
+    margin-left: 350px;
+    margin-bottom: 510px;
+}
+
+.block1 .shorts {
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    margin-top: 90px;
+    position: relative;
+    height: 900px; 
+    overflow: hidden; 
+}
+
+.block1 .shorts-container .shorts img {
+    position: absolute;
+    width: 100%;
+    height: auto;
+    transition: all 0.5s ease;
+}
+
+.block1 .shorts-container .shorts img:first-child {
+    position: relative;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.block1 .shorts-container .shorts img:nth-child(2),
+.block1 .shorts-container .shorts img:nth-child(3) {
+    opacity: 0;
+    transform: translateY(20px);
+}
